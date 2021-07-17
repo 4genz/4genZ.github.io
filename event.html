@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Event</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="session1.css">
+    <link rel="stylesheet" href="GlowingText.css">
+    <link rel="stylesheet" href="GlassCard.css">
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="event.css">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+
+</head>
+<style>
+</style>
+<body id="body" class="LightBGround" style="background: linear-gradient(180deg, #ff9068, #fd746c);background-size:400% 400%;">
+    <div id="scrollPath" ></div>
+    <div id="progressbar" ></div>
+
+    <div class="container-fluid-sm heading" id="navbar" style="padding-left:2%;padding-right:2%;transition: opacity 250ms ease-in;">
+      <nav class="navbar navbar-expand-md navbar-dark" id="nav" style="backdrop-filter: blur(100px);-webkit-backdrop-filter: blur( 40px );">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: 1px solid rgba(255, 102, 0, 0.925);">
+            <span class="navbar-toggler-icon" style = "color: rgba(255, 102, 0, 0.925);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="width: 100%;">
+              <div class="row">
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="index.html">Home</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center"> 
+                  <li class="nav-item">
+                    <a class="nav-link LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="university.html">University</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="test.html">Clubs</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style="color: rgba(255, 102, 0, 0.925) !important;font-weight: bolder;" href="event.html">Events</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="Article.html">Article</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link LightText " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="About.html">About us</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>   
+        </nav>   
+    </div>
+    
+    <section class="enable " id="sec1" >
+        <!-- CONTACT -->
+        <ul id="IconContainer" class="list-group fade-in">
+          <li id="icon"class="list-group-item"><a class="list-item LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="https://www.facebook.com/luancanvieclam/" id="link"><i class="fab fa-facebook-f" ></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" id="link" ><i class="fas fa-envelope hard" onclick="myFunction1()" data-tippy-content = "thesteam.fpt@gmail.com"></i></a></li>
+          <li id="icon"class="list-group-item"><a class="list-item LightText" style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="#" id="link"><i class="fas fa-phone hard" onclick="myFunction2()" data-tippy-content = "0789123456"></i></a></li>
+        </ul>
+        
+        <!-- CONTENT -->
+        <div class="swiper-container container" style="overflow: unset;" >
+            <div class="swiper-wrapper"  >
+              <div class="swiper-slide" style="display: flex;align-items: center;justify-content: center;">
+                <img src="sbod.jpg" class="img-fluid" alt="" style="width:100%;height: 100%;">
+              </div>
+              <div class="swiper-slide" style="display: flex;align-items: center;justify-content: center;">
+                <img src="logo.jpg" class="img-fluid" alt="" style="width:100%;height: 100%;">
+              </div>
+              <div class="swiper-slide" style="display: flex;align-items: center;justify-content: center;">
+                <img src="vitet.png" class="img-fluid" alt="" style="width:100%;height: 100%;">
+              </div>
+              <div class="swiper-slide" style="display: flex;align-items: center;justify-content: center;">
+                <img src="Reply.jpg" class="img-fluid" alt="" style="width:100%;height: 100%;">
+              </div>
+              <div class="swiper-slide" style="display: flex;align-items: center;justify-content: center;">
+                <img src="hackathon1.png" class="img-fluid" alt="" style="width:100%;height: 100%;">
+              </div>
+              <div class="swiper-slide" style="display: flex;align-items: center;justify-content: center;">
+                <img src="fcamp-bg.jpg" class="img-fluid" alt="" style="width:100%;height: 100%;">
+              </div>
+              
+            </div>
+          
+        </div>
+        <div class="row" style="margin-top:5%;padding-left:3%;">
+            <div class="col-md-4" style="display: flex;justify-content: center;align-items: center;margin-top: 5%;">
+                <div class="contenter" style="background: rgba(255, 255, 255, 0.6);width: 90%;margin: 5%;box-shadow: 0 15px 35px rgba(0,0,0,0.8);">
+                  <a href="SBOD.html">
+                    <div class="img-str" >
+                      <img src="sbod1.jpg" class="img-fluid" alt="">
+                    </div>
+                  </a>
+                  <div class="title">
+                    <h1>Super Big Open Day</h1>
+                    <p> “chơi hết mình, quẩy nhiệt tình” trong ngày Đại nhạc hội Super Big Open Day </p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="display: flex;justify-content: center;align-items: center;margin-top: 5%;">
+              <div class="contenter" style="background: rgba(255, 255, 255, 0.6);width: 90%;margin: 5%;box-shadow: 0 15px 35px rgba(0,0,0,0.8);">
+                <a href="ViTet.html">
+                  <div class="img-str" >
+                    <img src="vitet1.jpg" class="img-fluid" alt="">
+                  </div>
+                </a>
+                <div class="title">
+                  <h1>Vị tết 2021</h1>
+                  <p>Tết dân gian – sự kiện thường niên mỗi dịp Tết đến, xuân về tại xứ sở Hola</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" style="display: flex;justify-content: center;align-items: center;margin-top: 5%;">
+              <div class="contenter" style="background: rgba(255, 255, 255, 0.6);width: 90%;margin: 5%;box-shadow: 0 15px 35px rgba(0,0,0,0.8);">
+                <a href="REPLY.html">
+                  <div class="img-str" >
+                    <img src="reply1.jpg" class="img-fluid" alt="">
+                  </div>g
+                </a>
+                <div class="title">
+                  <h1>Reply FPTU</h1>
+                  <p>“Reply FPTU” - chuỗi sự kiện 15 năm thành lập FPT University</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" style="display: flex;justify-content: center;align-items: center;margin-top: 5%;">
+              <div class="contenter" style="background: rgba(255, 255, 255, 0.6);width: 90%;margin: 5%;box-shadow: 0 15px 35px rgba(0,0,0,0.8);">
+                <a href="Hackathon.html">
+                  <div class="img-str" >
+                    <img src="hackathon.png" class="img-fluid" alt="">
+                  </div>
+                </a>
+                <div class="title">
+                  <h1>FPT EDU Hackathon 2021</h1>
+                  <p>khới động FPT Edu Hackathon 2021 với chủ đề "sử dụng AI nhận diện hình ảnh"</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" style="display: flex;justify-content: center;align-items: center;margin-top: 5%;">
+              <div class="contenter" style="background: rgba(255, 255, 255, 0.6);width: 90%;margin: 5%;box-shadow: 0 15px 35px rgba(0,0,0,0.8);">
+                <a href="LADY.html">
+                  <div class="img-str" >
+                    <img src="lady.jpg" class="img-fluid" alt="">
+                  </div>
+                </a>
+                <div class="title">
+                  <h1>LADY BY NIGHT</h1>
+                  <p>LADY BY NIGHT - ĐẤU TRƯỜNG SẮC ĐẸP LỚN NHẤT XUHO </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" style="display: flex;justify-content: center;align-items: center;margin-top: 5%;">
+                <div class="contenter" style="background: rgba(255, 255, 255, 0.6);width: 90%;margin: 5%;box-shadow: 0 15px 35px rgba(0,0,0,0.8);">
+                  <div class="img-str" >
+                    <a href="F-camp.html">
+                      <img src="fcam1.png" class="img-fluid" alt="">
+                    </a>
+                  </div>
+                  <div class="title">
+                    <h1>F-CAMP </h1>
+                    <p>Sự kiện chào đón tân sinh viên thường niên của trường đại học FPT</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <input type="text" style="opacity: 0;" value="luandthe160124@fpt.edu.vn" id="myInput1">
+        <input type="text" style="opacity: 0;" value="113" id="myInput2">
+    <a href="https://www.hitwebcounter.com" target="_blank" style="opacity: 0;">
+      <img src="https://hitwebcounter.com/counter/counter.php?page=7814065&style=0036&nbdigits=5&type=ip&initCount=0" title="Free Counter" Alt="web counter"   border="0" /></a>                                        
+    </section>
+             
+    
+
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+      <script src="https://unpkg.com/tippy.js@6"></script>
+      <script src="GlowingText.js"></script>
+    <script src="swiper.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows : true,
+            },
+            loop: true,
+                autoplay : {
+                    delay:3500,
+                    disableOnInteraction: false,
+            },
+      });
+    </script>
+      <script>
+        // TIPPY
+        tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+      </script>
+</body>
+</html>
