@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Article</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/0d06166cbb.js"></script>
+    <link rel="stylesheet" href="university.css">
+    <link rel="stylesheet" href="Article.css">
+    <link rel="stylesheet" href="button.css">
+
+</head>
+<style>
+</style>
+<body style="overflow-x: unset;margin-bottom:  5%;">
+    <div id="scrollPath" ></div>
+    <div id="progressbar" ></div>
+    <div class="container-fluid-md heading " id="navbar" style="padding-left:2%;padding-right:2%;transition: opacity 250ms ease-in">
+        <nav class="navbar navbar-expand-md navbar-dark" id="nav" style="backdrop-filter: blur(100px);-webkit-backdrop-filter: blur( 40px );position: fixed;">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" style="border: 1px solid rgba(255, 102, 0, 0.925);z-index: 1000;">
+            <span class="navbar-toggler-icon" style = "color: rgba(255, 102, 0, 0.925);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" style="width: 100%;">
+              <div class="row">
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link  "  style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);color: #000;"  href="index.html">Home</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center"> 
+                  <li class="nav-item">
+                    <a class="nav-link "  style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);color: #000;"  href="university.html">University</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link  "  style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);color: #000;" href="test.html">Clubs</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">    
+                    <a class="nav-link  " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);color: #000;" href="event.html">Events</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link  "  style="color: rgba(255, 102, 0, 0.925) !important;font-weight: bolder;" href="Article.html">Article</a>
+                  </li>
+                </div>
+                <div class="col-md-2 text-center">
+                  <li class="nav-item">
+                    <a class="nav-link  " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);color: #000;"  href="About.html">About us</a>
+                  </li>
+                </div>
+              </div>
+            </ul>
+          </div>  
+        </nav>   
+      </div>
+      <ul id="IconContainer" class="list-group fade-in" style="opacity: 1;margin-bottom: 2%;">
+        <li id="icon"class="list-group-item" style="border: none;"><a class="list-item " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);"  href="https://www.facebook.com/luancanvieclam/" id="link"><i class="fab fa-facebook-f" ></i></a></li>
+        <li id="icon"class="list-group-item" style="border: none;"><a class="list-item " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" id="link" ><i class="fas fa-envelope hard" onclick="myFunction1()" data-tippy-content = "thesteam.fpt@gmail.com"></i></a></li>
+        <li id="icon"class="list-group-item" style="border: none;"><a class="list-item " style=" text-shadow: 0px 0px 20px rgba(255, 255, 255, 1);" href="#" id="link"><i class="fas fa-phone hard" onclick="myFunction2()" data-tippy-content = "0789123456"></i></a></li>
+      </ul>
+    <div class="row " style="margin-top: 10%;width: 80%;margin-left: 10%;">
+        <div class="col-lg-4 article" >
+          <a href="LUK.html">
+            <div class="img-str">
+              <img src="luk.png" class="img-fluid" alt="">
+            </div>
+            <div class="title">
+              <h1>GIỚI THIỆU VỀ LITTLE UK & TRANSITION</h1>
+              <p>7/1/2021</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 article" >
+          <a href="quansu.html">
+            <div class="img-str">
+              <img src="quansu.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="title">
+              <h1>CẨM NANG KÌ QUÂN SỰ CỦA TÂN SINH VIÊN ĐẠI HỌC FPT</h1>
+              <p>7/1/2021</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 article" >
+          <a href="academic.html">
+            <div class="img-str">
+              <img src="academic.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="title">
+              <h1>TỔNG HỢP CÁC CLB HỌC THUẬT TẠI TRƯỜNG ĐẠI HỌC FPT</h1>
+              <p>7/1/2021</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 article" >
+          <a href="vovinam.html">
+            <div class="img-str">
+              <img src="vovinam1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="title">
+              <h1>VOVINAM "MÔN HỌC" LẠ ĐÀO TẠO NHỮNG CHIẾN BINH</h1>
+              <p>7/13/2021</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 article" >
+          <a href="nhaccutruyenthong.html">
+            <div class="img-str">
+              <img src="nhaccutruyenthong.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="title">
+              <h1>GIỚI THIỆU VỀ NHẠC CỤ TRUYỀN THỐNG</h1>
+              <p>7/13/2021</p>
+            </div>
+          </a>
+        </div>
+        
+    </div>
+   
+
+     
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    
+    
+   <script>
+       tippy('.hard', 
+            {
+                
+                maxWidth: 300,
+                positon:top,
+                theme : 'tomato',
+                size: "medium",
+                inertia: true,
+                duration: 700,
+                hideOnClick: true,
+                followCursor: true
+            })
+            tippy('button', {
+        onMount(instance) {
+            const box = instance.popper.firstElementChild;
+            requestAnimationFrame(() => {
+            box.classList.add('animated');
+            box.classList.add('wobble');
+            });
+        },
+        onHidden(instance) {
+            const box = instance.popper.firstElementChild;
+            box.classList.remove('animated');
+            box.classList.remove('wobble');
+        },
+        });
+   </script>
+    <script>
+        import tippy, {animateFill} from 'tippy.js';
+        import 'tippy.js/dist/backdrop.css';
+        import 'tippy.js/animations/shift-away.css';
+
+        tippy(targets, {
+        animateFill: true,
+        plugins: [animateFill],
+        });
+    </script>
+     
+      
+</body>
+</html>

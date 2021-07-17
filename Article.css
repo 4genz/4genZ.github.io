@@ -1,0 +1,57 @@
+.title
+{
+    width: 80%;
+    margin-left: 5%;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 15px 35px rgb(0 0 0 / 80%);
+    border-radius: 10px;
+    padding: 5%;
+    position: absolute;
+    left: 5%;
+    bottom: -28%;
+    backdrop-filter: blur(10px);
+    transition: all .3s cubic-bezier(0.1,0.2,0.3,1);
+}
+.article 
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.article:hover .title
+{
+    bottom: -35%;
+}
+.article:hover .img-str
+{
+    transform: translateY(-15%);
+}
+.title h1
+{
+    font-size: 100%;
+    font-weight: 700;
+    color: #000;
+}
+.title p 
+{
+    color: #ff8300;
+}
+.img-str
+{
+    transition: all .3s cubic-bezier(0.1,0.2,0.3,1);
+}
+img
+{
+    border-radius: 10px;
+}
+@media only screen and (max-width:900px)
+{
+    .article
+    {
+        margin-top: 30% !important;
+        margin-bottom: 15% !important;
+    }
+    .row
+    {
+        margin-top: 20% !important;
+    }
+}
